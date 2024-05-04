@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import CheckUseEffect from "./CheckUseEffect";
 import CheckUseEffectwithCondition from "./CheckUseEffectwithCondition";
+import StyleComponent from "./StyleComponent"
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<CheckUseEffectwithCondition />);
+root.render(<StyleComponent />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
