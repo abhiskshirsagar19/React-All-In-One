@@ -1,10 +1,28 @@
-
 import "./App.css";
-import Button from "react-bootstrap/Button";
+import { Button, Nav } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
+      <Nav
+        activeKey="/home"
+        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+      >
+        <Nav.Item>
+          <Nav.Link href="/home">Active</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">Link</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-2">Link</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="disabled" disabled>
+            Disabled
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
       <h1>Install Bootstrap </h1>
       <Button variant="outline-primary">Primary</Button>{" "}
       <Button variant="outline-secondary">Secondary</Button>{" "}
