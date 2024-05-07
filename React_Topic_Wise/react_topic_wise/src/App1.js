@@ -1,5 +1,6 @@
 import "./App.css";
 import { Table, Container, Row, Col } from "react-bootstrap";
+import ReusableButton from "./ReusableButton";
 function AppNested() {
   const countriesWithCities = [
     { country: "USA", cities: ["A", "B", "C"] },
@@ -12,7 +13,9 @@ function AppNested() {
     { Category: "Drinks", items: ["Energy", "Friute Juice", "G"] },
     { Category: "Cloths", items: ["Hoody", "I", "Jacket"] },
   ];
-
+  const handleClick = () => {
+    console.log("Button Clicked From the App1");
+  };
   return (
     <>
       <div className="App">
@@ -59,6 +62,7 @@ function AppNested() {
             </Col>
           </Row>
         </Container>
+        <ReusableButton text="Button From App1" onClick={handleClick} />
       </div>
     </>
   );
