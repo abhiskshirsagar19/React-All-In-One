@@ -1,10 +1,13 @@
 
 import './App.css';
 import Democomponent from './Democomponent'
+import Arraysmap from "./arraysmap"
 function App() {
+
   return (
     <div className="App">
-     <Democomponent />
+     <Arraysmap />
+     
     </div>
   );
 }
